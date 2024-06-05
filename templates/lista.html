@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/templates/style.css">
+    <title>Agenda de Compromissos</title>
+</head>
+<body>
+    <h1>Lista de Compromissos Salvos</h1>
+    <main>
+        {% for tarefa in tarefas %}
+            <summary>{{tarefa.dia |e}}</summary>
+            <p>{{tarefa.tarefa |e}}</p>
+
+        {% endfor %}
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agenda de Compromissos</title>
+</head>
+<body>
+    <h1>Agenda de compromissos e tarefas</h1>
+
+    <main>
+        <form action="{{url_for('salvar')}}" method="post">
+            <label for="dds">Dia da Semana: </label>
+            <input type="text" name="dia" id="dia">
+            <br>
+            <label for="tarefa">Tarefa: </label>
+            <input type="text" name="tarefa" id="tarefa">
+            <br>
+            <input type="submit" value="Salvar Tarefa">
+        </form>
+    </main>
+    
+</body>
+</html>
